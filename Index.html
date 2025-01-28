@@ -3,41 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!------------- Fuentes ------------ -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+
+    <!------------- Estilos ------------->
     <link rel="stylesheet" type="text/css" href="codigo/style.css">
+    <link rel="stylesheet" type="text/css" href="codigo/fonts.css">
+    <link rel="stylesheet" href="codigo/normalize.css">
+    
     <title>Tienda virtual</title>
 </head>
 <body>
     <main>
         <header>
-            <nav></nav>
+            <nav>
+                <p>Tienda<strong>Online</strong></p>
+                <ul class="nav">
+                    <a href="#">Inicio</a>
+                    <a href="about">¿Quienes somos?</a>
+                    <a href="catalog">Catalogo</a>
+                    <a href="products">Productos</a>
+                </ul>
+            </nav>
         </header>
         <section>
-            <article class="Botton-WhatsApp">
+            <a href="https://api.whatsapp.com/send/?phone=573216335427&text&type=phone_number&app_absent=0" class="Botton-WhatsApp">
                  <img class="icono-whatsapp" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/512px-WhatsApp.svg.png" alt="Icono whatsApp" width="48" height="48">
-            </article>
+            </a>
         </section>
     </main>
     <footer>
         <center>
             <strong>@Tienda virtual</strong>
         </center><br>
-        <div class="columna">
+        <div class="grid">
             <div>
                 <strong><a>Contacto</a></strong>
+                <hr>
+                <a href="#">Tiendavirtual.com</a>
+                <br><br>
+                <strong>Puntos de venta</strong>
+                <br><br>
+                <b>Tienda virtual Yumbo</b>
+                <p>Cerca al centro comercial Belalcazar</p>
+                <br>
+                <b>Centro comercial Centenario Cali</b>
+                <p>Area 4</p>
             </div>
 
             <div>
                 <strong><a>Categorías</a></strong>
+                <hr>
+                <p>Joyas</p>
+                <p>Ropa</p>
+                <p>Relojería</p>
+                <p>Electrodomesticos</p>
+                <p>Construcción</p>
+                <p>Cocina</p>
+                <p>Mascotas</p>
+                <p>Decoraciones</p>
             </div>
             
             <div>
                 <strong><a>Información legal</a></strong>
+                <hr>
+                <p>TERMINOS Y CONDICIONES</p>
+                <p>INFORMACIÓN DE LOS USUARIOS</p>
+                <p>TRATAMIENTO Y PRIVASIDAD DE LA INFORMACIÓN</p>
+                <p>RESERVACIÓN DEL PAGO</p>
+                <p>DERECHO DE RETRACTO</p>
+                <p>DEVOLUCIONES</p>
+                <p>ENVÍOS</p>
             </div>
 
             <div>
-                <strong><a>Información legal</a></strong><a>Suscríbete a nuestro newsletter</a>
+                <strong><a>Suscríbete a nuestro newsletter</a></strong>
+                <hr>
+                <form action="#">
+                    <input type="text" style="height: 40px" width="200px"/>
+                </form>
+                <span>¡Siguenos!</span>
             </div>
         </div>
+        <hr>
     </footer>
 </body>
 </html>

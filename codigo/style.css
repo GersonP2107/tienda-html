@@ -1,3 +1,9 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+
+}
+
 .Botton-WhatsApp {
     
     display: flex;               
@@ -12,16 +18,56 @@
     padding: 0.375rem;
 }
 
-/* ------------Footer----------------------- */
+header {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    width: 100%;
+    top: 0;
+    z-index: 50;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+ nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 5rem;
+    margin-right: 5rem;
+
+}
+
+ul {
+    display: none; /* Equivalent to 'hidden' */
+    align-items: center; /* Equivalent to 'items-center' */
+}
+
+@media (min-width: 768px) { /* This assumes 'md' starts at 768px, adjust if your project's breakpoint is different */
+    ul {
+        display: flex; /* Equivalent to 'md:flex' */
+        gap: 2rem; /* Equivalent to 'space-x-8' (approximation, as gap handles both x and y directions) */
+    }
+}
+
+.nav, a {
+    color: #000000; /* Suponiendo que 'text-secondary' es un gris */
+    position: relative;
+    transition: color 0.3s; /* Asume una transición suave para los cambios de color */
+}
+
+.nav, a :hover {
+    color: #007bff; /* Suponiendo que 'text-primary' es un azul */
+}
+
+/* ------------------------ Footer ----------------------- */
 
 footer {
-    margin-top: 100px;
-    padding: 40px;
+    margin-top: 400px;
 }
 
-.columna {
-    width: 100%;
+.grid {
+    padding: 40px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    
+    gap: 40px;
 }
+
+
